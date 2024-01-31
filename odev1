@@ -1,0 +1,147 @@
+ SORU1
+ cumle = input("bir sey yaz:")
+ cumle_lower=cumle.lower()
+ print(cumle_lower)
+
+SORU2
+ karakterler = [10,30,20,80,90,20,40,60,20,]
+ print(karakterler.count(20))
+
+SORU3
+
+ kelime=input("bir kelime gir:")
+ harf=input("bir harf gir:")
+ sayac = 0
+ for karakter in kelime:
+ if karakter == harf: 
+   sayac += 1
+ print(f"'{harf}' harfi,'{kelime}'kelimesinde {sayac}kez gecmektedir.")
+
+ SORU4
+ cumle = input("bir cümle gir:")
+ alfabetik_kelime = ' '.join(sorted(cumle.split()))
+ print(alfabetik_kelime)
+
+soru5
+
+ cumle1 = input("cumle gir:")
+ cumle2 = input("cumle gir:")
+ birlesik_cumle = (cumle1 + cumle2).lower()
+ print(birlesik_cumle)
+
+
+ SORU6
+
+ kelime = input("bir kelime gir:")
+ kelime_replace = kelime.replace('a','@')
+ print(kelime_replace)
+
+ soru7
+
+ kelime = input("bir kelime gir:")
+ kelime_ters = kelime[::-1]
+ if kelime == kelime_ters:
+ print("palindrome")
+ else:
+ print("palindrome degil")
+
+ soru8
+
+ cumle=input("bir cumle gir:")
+ kelimeler = cumle.split()
+ en_uzun_kelime = max(kelimeler,key=len)
+ print(en_uzun_kelime)
+
+soru9
+
+ list = [1,2,3,4,5]
+ orta_sayi = len(list) // 2
+ orta_sayi = list[orta_sayi]
+ print(orta_sayi)
+
+ soru10
+
+ tuple = (1,2,3,4,5,6,7,8)
+ yeni_tuple = tuple[2:4]
+ print(yeni_tuple)
+
+soru11
+
+ set={1,2,3,4}
+ set.add(0)
+ print(set)
+ set.remove(2)
+ print(set)
+
+ soru12
+
+ dict={"anahtar1":"deger1","anahtar2":"deger2"}
+ eklenen_anahtar="anahtar3"
+ eklenen_deger="deger3"
+ dict[eklenen_anahtar] = eklenen_deger
+ print(dict)
+ silinecek_anahtar = "anahtar1"
+ del dict[silinecek_anahtar]
+ print(dict)
+
+ soru13
+
+ list=[1,2,3,4,6,7,8,9]
+ sayi= 5
+ orta_deger = len(list)//2
+ list.insert(orta_deger,sayi)
+ print(list)
+
+ soru14
+
+ list=[1,2,3,4,5]
+ orta_eleman = len(list) // 2
+ list.insert(orta_eleman,(10,20))
+ print(list)
+
+soru15
+
+ set=(1,2,3,4,5,6,7)
+ list=list(set)
+ sum = sum(list)
+ print(set)
+ print(list_set)
+ print(sum)
+
+ soru16
+ karakter = {"anahtar1":"sefa","anahtar2":"calis","anahtar3":"merhaba"}
+ toplam_karakter = sum(len(deger) for deger in karakter.values())
+ print(toplam_karakter)
+
+ soru17
+
+ list=[1,2,3,4,5,10,6,70,]
+ sayi=max(list)
+ print(sayi)
+
+ soru18
+
+ dict={"anahtar1":"sefa","anahtar2":"calis","anahtar3":"merhaba"}
+ string=''.join(dict.values())
+ print(string)
+
+ soru19
+
+ string1="sefa"
+ string2="calis"
+ birlesik_string = string1+string2
+ substring = input("aranacak substringi giriniz:")
+ konum = birlesik_string.find(substring)
+ if konum !=-1:
+      print(f"'{substring}'substring'i, birleştirilmiş string içinde{konum}.pozisyonda bulunuyor")
+ else:
+     print(f"'{substring}'substringi, birleştirilmiş string içinde bulunamadi")    
+
+soru20
+
+ana_string = "merhaba dunya,merhaba python"
+aranan_substring = "merhaba"
+yeni_substring = "selam"
+sayac = ana_string.count(aranan_substring)
+yeni_string = ana_string.replace(aranan_substring, yeni_substring, sayac-1)
+print(yeni_string)
