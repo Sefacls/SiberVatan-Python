@@ -1,0 +1,123 @@
+A=[233,45,81,99999,36,90,88,11,61]
+def sayiKontrol (sayi):
+    sayilar=[int(a) for a in str(sayi)]
+    return 1 if len(set(sayilar))==1 else 0
+basamak_ayni = []
+basmak_farkli = []
+for sayi in A:
+    if sayiKontrol(sayi):
+        basamak_ayni.append(sayi)
+    else:
+        basmak_farkli.append(sayi)
+print("basamakları aynı olanlar:",basamak_ayni)
+print("basamakları farklı olanlar:",basmak_farkli)
+        
+        
+def sayiKontrol (sayi):
+    rakam_str = str(sayi)
+    if len(set(rakam_str))==1:
+        return 1
+    else:
+        return 0
+A=[233,45,81,99999,36,90,88,11,61]
+for sayi in A (sayi):
+    if sayiKontrol(sayi):
+        print(f"{sayi}:basamak aynı")
+    else:
+        print(f"{sayi}:basamak farklı")
+
+liste = [10,20,30]
+print(type(liste))
+
+class Person:
+
+    address="bilgi yok"
+    def __init__(self,name,lname):
+        self.name = name
+        self.lname = lname
+
+p1 = Person(name="ali",lname="koç")
+print(p1)
+# print("benim adresim:",p1.address)
+# print("benim adim:",p1.name)
+# print("benim soy adim:",p1.lname)
+
+
+
+class Person:
+
+    address="bilgi yok"
+    def __init__(self,name,lname,address,yil):
+        self.name = name
+        self.lname = lname
+        self.address = address
+        self.yil = yil
+    def intro(self):
+        print("merhaba ben "+self.name)
+    def calcute(self):
+        return 2024-self.yas
+
+p1 = Person(name="ali",lname="koç",address="karabük",yil="1980")
+print(p1)
+print(type(p1))
+print("benim adresim:",p1.address)
+print("benim adim:",p1.name)
+print("benim soy adim:",p1.lname)
+print("doğum yılım:",p1.yil)
+p2 =  Person(name="sefa",lname="çalış",address="karabük",yil="2008")
+print(p2)
+print("isim:",p2.name,"soy isim:",p2.lname,"adres:",p2.address, "doğum yılı:",p2.yil,"yasim",p2.calcute())
+p1.intro()
+p2.intro()
+p1.hesapla()
+p2.hesapla()
+
+
+
+class Daire:
+    def __init__(self,iki,pi,r):
+        self.iki=iki
+        self.pi=pi
+        self.r=r
+p1=Daire(iki=2,pi=3,r=7)
+print(p1.iki*p1.pi*p1.r)
+
+
+
+class Daire:
+    pi = 3.14
+
+    def __init__(self,yaricap):
+        self.yaricap = yaricap
+    def alan_hesaplama(self):
+        return self.pi *(self.yaricap**2)
+daire1 = Daire(5)
+print(daire1.alan_hesaplama())
+
+class Daire:
+    pi = 3.14
+
+    def __init__(self,yaricap):
+        self.yaricap = yaricap
+    def cevre_hesaplama(self):
+        return 2* self.pi * self.yaricap
+daire1 = Daire(5)
+print(daire1.cevre_hesaplama())
+
+class Square:
+    def __init__(self,a):
+        self.a=a
+    def alan(self):
+        return self.a**2
+kare = Square (5)
+print(kare.alan())
+    
+
+
+
+
+
+
+
+
+
